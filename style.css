@@ -377,3 +377,38 @@ p {
   object-fit: cover;
   display: block;
 }
+/* 📱 Mobile fit */
+.home-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px 18px 60px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home-wrapper {
+    padding-top: 30px;
+  }
+
+  .home-wrapper h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .home-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 16px;
+  }
+
+  .quote {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  .days {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+}
