@@ -360,3 +360,20 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.video-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* 🔥 THIS IS THE KEY */
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+.video-card video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
