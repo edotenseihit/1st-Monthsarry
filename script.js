@@ -57,3 +57,14 @@ if (container) {
     setTimeout(() => heart.remove(), 10000);
   }, 800);
 }
+function unlock() {
+  const pass = document.getElementById("password").value;
+  const error = document.getElementById("error");
+
+  if (pass === "YYYYMMDD") { // <-- your real date
+    localStorage.setItem("unlocked", "true");
+    window.location.href = "index.html";
+  } else {
+    error.textContent = "Wrong password 💔";
+  }
+}
