@@ -11,20 +11,32 @@
 </script>
 </head>
 <body>
+<body class="lock-page">
 
-<div class="lock-box">
-  <h1>🔐 Secret Memories</h1>
-  <p class="clue">
-    Clue: the day our story officially started 💞  
-    (format: YYYYMMDD)
-  </p>
+  <div class="lock-wrapper">
+    <div class="lock-box">
+      <h1>🔐 Secret Memories</h1>
 
-  <input type="password" id="password" placeholder="Enter password">
-  <button onclick="unlock()">Unlock</button>
+      <p class="clue">
+        Clue: the day our story officially started 💕<br>
+        <small>(format: YYYYMMDD)</small>
+      </p>
 
-  <p id="error"></p>
-<div class="heart-container"></div>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password"
+        inputmode="numeric"
+      >
 
+      <button onclick="unlock()">Unlock</button>
+
+      <p id="error"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body
 <script>
   function unlock() {
     const pass = document.getElementById("password").value;
