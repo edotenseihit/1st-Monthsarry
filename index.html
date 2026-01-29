@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+  if (!localStorage.getItem("unlocked")) {
+    window.location.href = "lock.html";
+  }
+</script>
+  <meta charset="UTF-8">
+  <title>For My Babbyy ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="heart-container"></div>
+<audio autoplay loop>
+  <source src="love.mp3" type="audio/mpeg">
+</audio>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="memories.html">Memories</a>
+  <a href="message.html">Message</a>
+  <a href="reasons.html">Reasons</a>
+  <a href="gallery.html">Gallery</a>
+  <button onclick="toggleMode()">🌙</button>
+</nav>
+
+
+<section class="center">
+  <h1>Welcome, My Baby Jammm ❤️</h1>
+  <p>
+    Happy 1st Monthsarry baby i made this website for all of our memories, laughs, and moments  
+    that made us stronger together. I'm sorry this is all i have, and i'm not by your side right now
+    but i always feel your presence and love that you have for me, i love you babyyy❤️❤️❤️
+  </p>
+  <p class="quote">
+    “Every moment with you is my favorite.”
+  </p>
+  <p id="countdown"></p>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+<audio id="bgMusic" loop>
+  <source src="music/love.mp3" type="audio/mpeg">
+</audio>
+
+</html>

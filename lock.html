@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  if (!localStorage.getItem("unlocked")) {
+    window.location.replace("lock.html");
+  }
+</script>
+</head>
+<body>
+
+<div class="lock-box">
+  <h1>🔐 Secret Memories</h1>
+  <p class="clue">
+    Clue: the day our story officially started 💞  
+    (format: YYYYMMDD)
+  </p>
+
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="unlock()">Unlock</button>
+
+  <p id="error"></p>
+<div class="heart-container"></div>
+
+<script>
+  function unlock() {
+    const pass = document.getElementById("password").value;
+    const error = document.getElementById("error");
+
+    if (pass === "20251230") { // CHANGE PASSWORD IF NEEDED
+      localStorage.setItem("unlocked", "yes");
+      localStorage.setItem("playMusic", "yes");
+      window.location.href = "index.html";
+    } else {
+      error.textContent = "Wrong password… try again 💔";
+    }
+  }
+</script>
+
